@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre-se no Formulário</h1>
+        <form id="register-form">
+            <div class="full-box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome Completo" >
+            </div>
+            <div class="half-box spacing">
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="number" name="nascimento" id="nascimento" placeholder="00 / 00 / 0000" >
+            </div>
+            <div class="half-box spacing">
+                <label for="cpf">CPF</label>
+                <input type="number" name="cpf" id="cpf" placeholder="Digite o seu CPF" >
+            </div>
+            <div class="half-box spacing">
+                <label for="rg">RG</label>
+                <input type="number" name="rg" id="rg" placeholder="Digite o seu RG" >
+            </div>
+            <div class="half-box spacing">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Digite o seu endereço" >
+            </div>
+            <div class="half-box spacing">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite a sua cidade" >
+            </div>
+            <div class="half-box spacing">
+                <label for="pais">País</label>
+                <input type="text" name="pais" id="pais" placeholder="Digite o País" >
+            </div>
+            <div class="half-box spacing">
+                <label for="cep"> CEP </label>
+                <input type="number" name="cep" id="cep" placeholder="CEP" >
+            </div>
+            <div class="half-box spacing">
+                <label for="telefone"> Telefone </label>
+                <input type="number" name="telefone" id="telefone" placeholder="Número para contato" >
+            </div>
+            <div class="half-box spacing">
+                <label for="emai">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" >
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label"> Eu li e aceito os <a href ="#"> termos de uso </a></label>
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Cadastrar">
+                
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script> src="js/scripts.js"</script>
+</body>
+</html>
